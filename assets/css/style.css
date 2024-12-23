@@ -41,6 +41,73 @@
                     0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
+/* Add these rules at the very beginning of your style.css file */
+
+/* Reset margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Reset HTML and Body */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+    min-height: 100vh;
+}
+
+/* Ensure main content fills available space */
+main {
+    min-height: calc(100vh - 150px); /* Adjust based on your header/footer height */
+    width: 100%;
+}
+
+/* Container adjustments */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+    overflow: visible; /* Changed from hidden to prevent cutting off content */
+}
+
+/* Header adjustments */
+.site-header {
+    width: 100%;
+    margin: 0;
+    padding: 1.5rem 0;
+}
+
+/* Footer adjustments */
+.site-footer {
+    width: 100%;
+    margin: 0;
+    padding: var(--spacing-sm) 0;
+}
+
+/* Section adjustments */
+section {
+    width: 100%;
+    margin: 0;
+}
+
+/* Image container adjustments */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Grid container adjustments */
+.grid {
+    margin: 0;
+    width: 100%;
+}
+
+
 body {
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
     font-size: var(--font-size-base);
