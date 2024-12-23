@@ -1,0 +1,105 @@
+/* footer.css */
+
+.site-footer {
+    background-color: var(--color-primary-500);
+    color: var(--color-white);
+    padding: var(--spacing-sm) 0;
+    margin-top: var(--spacing-md);
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: var(--spacing-lg);
+    align-items: flex-start;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-section h4 {
+    color: var(--color-white);
+    margin-bottom: var(--spacing-md);
+}
+
+.footer-section p {
+    color: var(--color-white);
+    text-align: center;
+    margin-bottom: var(--spacing-xs);
+}
+
+/* Footer Links */
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-sm);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links a {
+    color: var(--color-white);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    transition: background-color var(--transition-fast);
+    display: inline-block;
+    font-size: 1.2rem;
+    white-space: nowrap;
+}
+
+.footer-links a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: none;
+}
+
+/* Social Links */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-sm);
+}
+
+.social-icon {
+    width: 72px;
+    height: 72px;
+    background-color: var(--color-white);
+    padding: 16px;
+    border-radius: 50%;
+    transition: all var(--transition-fast);
+}
+
+.social-icon path,
+.social-icon rect,
+.social-icon line,
+.social-icon circle {
+    stroke: var(--color-primary-500);
+    stroke-width: 2;
+    fill: none;
+}
+
+.social-icon:hover {
+    transform: translateY(-2px);
+    background-color: var(--color-primary-100);
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: center;
+    margin-top: var(--spacing-md);
+    padding-top: var(--spacing-md);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-bottom p {
+    color: var(--color-white);
+    margin-bottom: 0;
+}

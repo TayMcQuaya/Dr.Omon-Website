@@ -1,0 +1,203 @@
+/* contact.css */
+
+/* Page Hero */
+.contact-page .page-hero {
+    padding: var(--spacing-xl) 0;
+    text-align: center;
+    background: linear-gradient(135deg, var(--color-primary-100) 0%, var(--color-primary-200) 100%);
+}
+
+.contact-page .lead {
+    font-size: var(--font-size-xl);
+    color: var(--color-primary-700);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Contact Info Section */
+.contact-info {
+    position: relative;
+    top: -8rem;
+    margin-bottom: -4rem;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-lg);
+    margin: var(--spacing-lg) 0;
+}
+
+.contact-card {
+    background-color: var(--color-white);
+    color: var(--color-text);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    padding: var(--spacing-lg);
+    text-align: center;
+    transition: transform var(--transition-fast);
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.contact-icon {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto var(--spacing-lg);
+}
+
+.contact-card h3 {
+    color: var(--color-primary-600);
+    margin-bottom: var(--spacing-md);
+}
+
+.contact-card p {
+    color: var(--color-text);
+    margin-bottom: var(--spacing-xs);
+}
+
+.contact-card a {
+    color: var(--color-primary-600);
+    text-decoration: none;
+    font-weight: 600;
+    display: block;
+    margin-bottom: var(--spacing-md);
+    transition: color var(--transition-fast);
+}
+
+.contact-card a:hover {
+    color: var(--color-primary-700);
+    text-decoration: underline;
+}
+
+/* Contact Form */
+.contact-form {
+    padding: var(--spacing-xl) 0;
+}
+
+.form-wrapper {
+    background-color: var(--color-white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    padding: var(--spacing-xl);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.form-wrapper h2 {
+    text-align: center;
+    color: var(--color-primary-600);
+    margin-bottom: var(--spacing-xl);
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-lg);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group.full-width {
+    grid-column: 1 / -1;
+}
+
+.form-group label {
+    margin-bottom: var(--spacing-xs);
+    font-weight: 600;
+    color: var(--color-text);
+}
+
+.required {
+    color: #dc3545;
+    margin-left: var(--spacing-xs);
+}
+
+/* FAQ Section */
+.faq {
+    padding: var(--spacing-xl) 0;
+    background: linear-gradient(135deg, var(--color-primary-100) 0%, var(--color-primary-200) 100%);
+}
+
+.faq h2 {
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+    color: var(--color-primary-700);
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.faq-item {
+    background-color: var(--color-white);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
+
+.faq-item h3 {
+    color: var(--color-primary-600);
+    margin-bottom: var(--spacing-md);
+}
+
+.faq-item p {
+    color: var(--color-text);
+}
+
+.faq-item a {
+    color: var(--color-primary-600);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.faq-item a:hover {
+    text-decoration: underline;
+}
+
+/* Success Message */
+.success-message {
+    background-color: #d4edda;
+    color: #155724;
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius);
+    text-align: center;
+    margin: var(--spacing-md) 0;
+}
+
+/* Error Message */
+.error-message {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius);
+    text-align: center;
+    margin: var(--spacing-md) 0;
+}
+
+/* Dark Mode Adjustments */
+[data-theme="dark"] {
+    .contact-card,
+    .form-wrapper,
+    .faq-item {
+        background: var(--color-surface);
+    }
+
+    .success-message {
+        background-color: rgba(212, 237, 218, 0.1);
+        color: #d4edda;
+    }
+
+    .error-message {
+        background-color: rgba(248, 215, 218, 0.1);
+        color: #f8d7da;
+    }
+}

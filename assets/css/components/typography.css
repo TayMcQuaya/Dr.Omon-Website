@@ -1,0 +1,129 @@
+/* typography.css */
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-primary);
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: var(--color-text);
+    margin-bottom: var(--spacing-md);
+}
+
+h1 { 
+    font-size: var(--font-size-3xl);
+    margin-bottom: var(--spacing-lg);
+}
+
+h2 { 
+    font-size: var(--font-size-2xl);
+    margin-bottom: var(--spacing-md);
+}
+
+h3 { 
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--spacing-sm);
+}
+
+h4 { 
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--spacing-sm);
+}
+
+h5 { 
+    font-size: var(--font-size-md);
+    margin-bottom: var(--spacing-xs);
+}
+
+h6 { 
+    font-size: var(--font-size-base);
+    margin-bottom: var(--spacing-xs);
+}
+
+/* Body text */
+p {
+    font-size: var(--font-size-base);
+    line-height: 1.7;
+    margin-bottom: var(--spacing-md);
+    color: var(--color-text);
+}
+
+.lead {
+    font-size: var(--font-size-lg);
+    font-weight: 500;
+    color: var(--color-primary-700);
+}
+
+/* Links */
+a {
+    color: var(--color-primary-600);
+    transition: color var(--transition-fast);
+}
+
+a:hover {
+    color: var(--color-primary-800);
+}
+
+/* Lists */
+ul, ol {
+    margin-bottom: var(--spacing-md);
+    padding-left: var(--spacing-lg);
+}
+
+li {
+    margin-bottom: var(--spacing-xs);
+}
+
+/* Text utilities */
+.text-sm { font-size: var(--font-size-sm); }
+.text-base { font-size: var(--font-size-base); }
+.text-lg { font-size: var(--font-size-lg); }
+.text-xl { font-size: var(--font-size-xl); }
+
+.font-light { font-weight: 300; }
+.font-normal { font-weight: 400; }
+.font-medium { font-weight: 500; }
+.font-semibold { font-weight: 600; }
+.font-bold { font-weight: 700; }
+
+.italic { font-style: italic; }
+.underline { text-decoration: underline; }
+.line-through { text-decoration: line-through; }
+
+.uppercase { text-transform: uppercase; }
+.lowercase { text-transform: lowercase; }
+.capitalize { text-transform: capitalize; }
+
+/* Text colors */
+.text-primary { color: var(--color-primary-600); }
+.text-light { color: var(--color-text-light); }
+.text-white { color: var(--color-white); }
+
+/* Special text elements */
+blockquote {
+    border-left: 4px solid var(--color-primary-300);
+    padding-left: var(--spacing-md);
+    margin: var(--spacing-lg) 0;
+    font-style: italic;
+    color: var(--color-text-light);
+}
+
+code {
+    font-family: monospace;
+    background-color: var(--color-primary-100);
+    padding: 0.2em 0.4em;
+    border-radius: var(--border-radius-sm);
+    font-size: 0.9em;
+}
+
+/* Section headers */
+.section-title {
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+}
+
+.section-subtitle {
+    text-align: center;
+    color: var(--color-text-light);
+    margin-bottom: var(--spacing-lg);
+}
