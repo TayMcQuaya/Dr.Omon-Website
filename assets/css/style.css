@@ -2,46 +2,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap');
 
 :root {
-    --color-primary: #2E7D32;
-    --color-primary-light: #4CAF50;
-    --color-secondary: #8BC34A;
-    --color-accent: #FFA000;
-    --color-background: #F5F5F5;
-    --color-text: #333333;
+    /* Updated color palette for scientific professionalism */
+    --color-primary: #1B5E20;         /* Deeper, more authoritative green */
+    --color-primary-light: #388E3C;   /* Professional mid-tone */
+    --color-secondary: #558B2F;       /* Complementary green */
+    --color-accent: #F57F17;          /* Warmer, more sophisticated accent */
+    --color-text: #2C3E50;           /* Refined dark blue-gray */
+    --color-text-light: #546E7A;     /* Sophisticated secondary text */
+    --color-background: #FAFAFA;     /* Subtle off-white */
     --color-white: #FFFFFF;
+    --color-card-bg: #FFFFFF;
+    --color-border: #E0E0E0;
     
-    --spacing-xs: 0.25rem;
-    --spacing-sm: 0.5rem;
-    --spacing-md: 1rem;
+    /* Scientific typography scale based on golden ratio */
+    --font-size-xs: 0.75rem;     /* 12px */
+    --font-size-sm: 0.875rem;    /* 14px */
+    --font-size-base: 1rem;      /* 16px */
+    --font-size-md: 1.125rem;    /* 18px */
+    --font-size-lg: 1.3125rem;   /* 21px */
+    --font-size-xl: 1.5rem;      /* 24px */
+    --font-size-2xl: 1.875rem;   /* 30px */
+    --font-size-3xl: 2.25rem;    /* 36px */
+    
+    /* Refined spacing system */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 0.75rem;
+    --spacing-md: 1.25rem;
     --spacing-lg: 2rem;
-    --spacing-xl: 4rem;
+    --spacing-xl: 3rem;
+    --spacing-2xl: 4rem;
     
-    --border-radius: 8px;
-    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Reset and Base Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    /* Professional components */
+    --border-radius: 6px;
+    --border-radius-lg: 8px;
+    --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06),
+                  0 4px 6px rgba(0, 0, 0, 0.1);
+    --box-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+                    0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
 body {
-    background-color: var(--color-white);
-    background-image: url('../images/mushroom-bg.svg');
-    background-size: 500px 500px;
-    background-repeat: repeat;
-    background-attachment: fixed;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-size: var(--font-size-base);
+    line-height: 1.6;
+    color: var(--color-text);
+    background-color: var(--color-background);
 }
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
-    color: var(--color-primary);
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
     font-weight: 600;
     line-height: 1.2;
-    margin-bottom: var(--spacing-md);
+    letter-spacing: -0.02em;
+    color: var(--color-text);
 }
 
 h4 {
@@ -1816,6 +1830,9 @@ input[type="checkbox"] {
         color: var(--color-text);
         font-size: 1.1rem;
     }
+
+
+    
 
     
 }

@@ -3,65 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MycoBridge Network - Connecting Minds, Fostering Knowledge</title>
-    <meta name="description" content="MycoBridge Network promotes research, education, and advocacy for the safe and informed use of mushrooms, connecting enthusiasts, researchers, and advocates worldwide.">
+    <title>MycoBridge Network | Advancing Mycological Research & Education</title>
+    <meta name="description" content="MycoBridge Network is a leading research organization advancing mycological science through innovative research, education, and global collaboration.">
     <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Preload critical fonts -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" as="style">
 </head>
 <body class="home-page">
     <header class="site-header">
         <div class="container">
-            
+            <nav class="primary-navigation" aria-label="Main navigation">
                 <ul class="nav-menu">
                     <li><a href="about.html" class="nav-link" data-nav="about">About</a></li>
                     <li><a href="team.html" class="nav-link" data-nav="team">Our Team</a></li>
                     <li><a href="research.html" class="nav-link" data-nav="research">Research</a></li>
-                    <li><a href="donate.html" class="nav-link" data-nav="donate">Support Us</a></li>
+                    <li><a href="publications.html" class="nav-link" data-nav="publications">Publications</a></li>
+                    <li><a href="donate.html" class="nav-link" data-nav="donate">Support</a></li>
                     <li><a href="contact.html" class="nav-link" data-nav="contact">Contact</a></li>
                 </ul>
-           
+            </nav>
         </div>
     </header>
 
-    <!-- Main content sections - spacing changes -->
     <main>
-        <section class="hero" style="margin-top: 0;">
-            <div class="hero-logo">
-                <img src="assets/images/logo.png" 
-                     alt="MycoBridge Network Logo" 
-                     class="centered-logo"
-                     onerror="this.src='/api/placeholder/300/300'; this.onerror=null;">
-            </div>
-            <div class="container">
-                <h1>Welcome to MycoBridge Network</h1>
-                <p class="hero-subtitle">Connecting Minds, Fostering Knowledge, Advancing Research</p>
-            </div>
-        </section>
-    </main>
-
-        <section class="mission-section section-padding">
-            <div class="container">
-                <div class="grid grid-2">
-                    <div class="mission-content">
-                        <h2>Our Mission</h2>
-                        <p class="mission-text">At MycoBridge Network, we're dedicated to advancing the understanding and responsible use of mushrooms through research, education, and community engagement. Our global network of experts and enthusiasts works together to unlock the potential of fungi for health, science, and society.</p>
-                        <a href="about.html" class="button button-text">Discover More →</a>
-                    </div>
-                    <div class="mission-image">
-                        <img src="assets/images/research-lab.jpg" alt="Mushroom research laboratory">
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-logo">
+                    <img src="assets/images/logo.png" 
+                         alt="MycoBridge Network Logo" 
+                         class="logo-image"
+                         onerror="this.src='/api/placeholder/300/300'; this.onerror=null;">
+                </div>
+                <div class="container text-center">
+                    <h1 class="hero-title">Advancing Mycological Research & Innovation</h1>
+                    <p class="hero-subtitle">Bridging scientific discovery with sustainable solutions through cutting-edge mushroom research</p>
+                    <div class="hero-cta">
+                        <a href="research.html" class="button button-primary">Explore Our Research</a>
+                        <a href="about.html" class="button button-secondary">Learn More</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Other sections remain similar but with added section-padding class -->
+        <section class="research-highlights">
+            <div class="container">
+                <h2 class="section-title">Current Research Initiatives</h2>
+                <div class="research-grid">
+                    <article class="research-card">
+                        <div class="research-icon">
+                            <img src="assets/images/icons/biotech.svg" alt="" aria-hidden="true">
+                        </div>
+                        <div class="research-content">
+                            <h3>Fungal Biotechnology</h3>
+                            <p>Developing innovative applications of mushroom-based compounds for health and sustainable agriculture.</p>
+                            <a href="research.html#biotech" class="learn-more">Learn More →</a>
+                        </div>
+                    </article>
 
-        <section class="join-section section-padding">
+                    <article class="research-card">
+                        <div class="research-icon">
+                            <img src="assets/images/icons/cultivation.svg" alt="" aria-hidden="true">
+                        </div>
+                        <div class="research-content">
+                            <h3>Advanced Cultivation</h3>
+                            <p>Optimizing cultivation techniques through controlled environment studies and genetic analysis.</p>
+                            <a href="research.html#cultivation" class="learn-more">Learn More →</a>
+                        </div>
+                    </article>
+
+                    <article class="research-card">
+                        <div class="research-icon">
+                            <img src="assets/images/icons/sustainability.svg" alt="" aria-hidden="true">
+                        </div>
+                        <div class="research-content">
+                            <h3>Sustainable Solutions</h3>
+                            <p>Investigating mushroom applications in waste management and environmental restoration.</p>
+                            <a href="research.html#sustainability" class="learn-more">Learn More →</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="impact-metrics">
+            <div class="container">
+                <h2 class="section-title">Research Impact</h2>
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <span class="metric-number">20+</span>
+                        <span class="metric-label">Research Publications</span>
+                        <p class="metric-description">Peer-reviewed articles advancing mycological science</p>
+                    </div>
+                    <div class="metric-card">
+                        <span class="metric-number">500+</span>
+                        <span class="metric-label">Fungal Strains</span>
+                        <p class="metric-description">Preserved in our culture collection</p>
+                    </div>
+                    <div class="metric-card">
+                        <span class="metric-number">15+</span>
+                        <span class="metric-label">Global Partners</span>
+                        <p class="metric-description">International research collaborations</p>
+                    </div>
+                    <div class="metric-card">
+                        <span class="metric-number">5</span>
+                        <span class="metric-label">Patent Applications</span>
+                        <p class="metric-description">Novel technologies in development</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="latest-publications">
+            <div class="container">
+                <h2 class="section-title">Latest Research Publications</h2>
+                <div class="publications-grid">
+                    <article class="publication-card">
+                        <span class="publication-date">2024</span>
+                        <h3 class="publication-title">Novel Approaches in Shiitake Cultivation</h3>
+                        <p class="publication-authors">Isikhuemhen et al.</p>
+                        <p class="publication-journal">Journal of Mycological Research</p>
+                        <a href="publications.html" class="button button-text">Read Abstract →</a>
+                    </article>
+                    <article class="publication-card">
+                        <span class="publication-date">2024</span>
+                        <h3 class="publication-title">Sustainable Mushroom-Based Feed Alternatives</h3>
+                        <p class="publication-authors">Thompson, Liu, Isikhuemhen</p>
+                        <p class="publication-journal">Sustainable Agriculture Studies</p>
+                        <a href="publications.html" class="button button-text">Read Abstract →</a>
+                    </article>
+                </div>
+                <div class="text-center">
+                    <a href="publications.html" class="button button-secondary">View All Publications</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="join-research">
             <div class="container text-center">
-                <h2>Join Our Community</h2>
-                <p class="section-description">Be part of a growing network of researchers, educators, and enthusiasts dedicated to advancing mushroom science and education.</p>
-                <form class="newsletter-form">
-                    <input type="email" name="email" placeholder="Enter your email" required>
-                    <button type="submit" class="button button-primary">Subscribe</button>
+                <h2>Participate in Our Research</h2>
+                <p class="section-description">Join our network of researchers, educators, and enthusiasts advancing mycological science.</p>
+                <form class="newsletter-form" action="/subscribe" method="POST">
+                    <div class="form-group">
+                        <input type="email" 
+                               name="email" 
+                               placeholder="Enter your email address" 
+                               required
+                               aria-label="Email address for newsletter">
+                        <button type="submit" class="button button-primary">Subscribe to Updates</button>
+                    </div>
                 </form>
             </div>
         </section>
@@ -69,25 +160,34 @@
 
     <footer class="site-footer">
         <div class="container">
-            <div class="footer-grid grid grid-3">
+            <div class="footer-grid">
                 <div class="footer-section">
-                    <h4>Contact Us</h4>
-                    <p>Email: info@mycobridge.org</p>
-                    <p>Phone: (555) 123-4567</p>
-                    <p>Address: Research Drive<br>Innovation Center<br>NC 27401</p>
+                    <h4>Contact</h4>
+                    <address>
+                        <p>Research Drive</p>
+                        <p>Innovation Center</p>
+                        <p>NC 27401</p>
+                        <p><a href="mailto:info@mycobridge.org">info@mycobridge.org</a></p>
+                        <p><a href="tel:+15551234567">(555) 123-4567</a></p>
+                    </address>
                 </div>
+                
                 <div class="footer-section">
                     <h4>Quick Links</h4>
-                    <ul class="footer-links">
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="team.html">Our Team</a></li>
-                        <li><a href="research.html">Research</a></li>
-                        <li><a href="donate.html">Support Us</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
+                    <nav aria-label="Footer navigation">
+                        <ul class="footer-links">
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="team.html">Our Team</a></li>
+                            <li><a href="research.html">Research</a></li>
+                            <li><a href="publications.html">Publications</a></li>
+                            <li><a href="donate.html">Support Us</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
                 </div>
+
                 <div class="footer-section">
-                    <h4>Follow Us</h4>
+                    <h4>Connect With Us</h4>
                     <div class="social-links">
                         <a href="https://twitter.com/mycobridge" 
                            target="_blank" 
@@ -107,31 +207,16 @@
                                 <circle cx="4" cy="4" r="2"/>
                             </svg>
                         </a>
-                        <a href="https://instagram.com/mycobridge" 
-                           target="_blank" 
-                           rel="noopener" 
-                           aria-label="Follow us on Instagram">
-                            <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
-                                <!-- Updated Instagram icon with better visibility -->
-                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-                                <circle cx="12" cy="12" r="3"/>
-                                <circle cx="17" cy="7" r="1.5"/>
-                            </svg>
-                        </a>
                     </div>
                 </div>
             </div>
+            
             <div class="footer-bottom">
-                <p>&copy; 2024 MycoBridge Network. All Rights Reserved.</p>
+                <p>&copy; <span id="current-year">2024</span> MycoBridge Network. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
-    
-    <script>
-        // Update copyright year automatically
-        document.getElementById('current-year').textContent = new Date().getFullYear();
-    </script>
-    
+
     <script src="assets/js/main.js" defer></script>
 </body>
 </html>
