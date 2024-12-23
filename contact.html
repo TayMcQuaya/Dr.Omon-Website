@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - MycoBridge Network</title>
+    <meta name="description" content="Get in touch with MycoBridge Network. Connect with our team for research collaboration, educational programs, or general inquiries.">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="contact-page">
+    <header class="site-header">
+        <div class="container">
+            <div class="header-wrapper">
+                <a href="/" class="logo">
+                    <img src="assets/images/logo.png" 
+                         alt="MycoBridge Network Logo" 
+                         height="45" 
+                         onerror="this.src='/api/placeholder/135/45'; this.onerror=null;">
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="/index.html" class="nav-link" data-nav="home">Home</a></li>
+                    <li><a href="/about.html" class="nav-link" data-nav="about">About</a></li>
+                    <li><a href="/team.html" class="nav-link" data-nav="contact">Our Team</a></li>
+                    <li><a href="/research.html" class="nav-link" data-nav="research">Research</a></li>
+                    <li><a href="/donate.html" class="nav-link" data-nav="donate">Support Us</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1>Contact Us</h1>
+                <p class="lead">Have questions? We'd love to hear from you.</p>
+            </div>
+        </section>
+
+        <section class="contact-info">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-card card">
+                        <div class="contact-icon">
+                            <img src="assets/images/icons/email.svg" alt="" aria-hidden="true">
+                        </div>
+                        <h3>Email</h3>
+                        <p>General Inquiries:</p>
+                        <a href="mailto:info@mycobridge.org">info@mycobridge.org</a>
+                        <p>Research Collaboration:</p>
+                        <a href="mailto:research@mycobridge.org">research@mycobridge.org</a>
+                    </div>
+
+                    <div class="contact-card card">
+                        <div class="contact-icon">
+                            <img src="assets/images/icons/phone.svg" alt="" aria-hidden="true">
+                        </div>
+                        <h3>Phone</h3>
+                        <p>Main Office:</p>
+                        <a href="tel:+15551234567">(555) 123-4567</a>
+                        <p>Research Department:</p>
+                        <a href="tel:+15551234568">(555) 123-4568</a>
+                    </div>
+
+                    <div class="contact-card card">
+                        <div class="contact-icon">
+                            <img src="assets/images/icons/location.svg" alt="" aria-hidden="true">
+                        </div>
+                        <h3>Location</h3>
+                        <p>Research Drive</p>
+                        <p>Innovation Center</p>
+                        <p>NC 27401</p>
+                        <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="button button-secondary">Get Directions</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-form">
+            <div class="container">
+                <div class="form-wrapper">
+                    <h2>Send Us a Message</h2>
+                    <form id="contactForm" action="/submit-contact" method="POST">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="name">Full Name<span class="required">*</span></label>
+                                <input type="text" 
+                                       id="name" 
+                                       name="name" 
+                                       required 
+                                       placeholder="Enter your full name">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email Address<span class="required">*</span></label>
+                                <input type="email" 
+                                       id="email" 
+                                       name="email" 
+                                       required 
+                                       placeholder="Enter your email address">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" 
+                                       id="phone" 
+                                       name="phone" 
+                                       placeholder="Enter your phone number">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Subject<span class="required">*</span></label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Select a subject</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="research">Research Collaboration</option>
+                                    <option value="education">Educational Programs</option>
+                                    <option value="support">Support & Donations</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label for="message">Message<span class="required">*</span></label>
+                                <textarea id="message" 
+                                          name="message" 
+                                          required 
+                                          rows="6" 
+                                          placeholder="Enter your message"></textarea>
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" 
+                                           name="newsletter" 
+                                           id="newsletter">
+                                    Subscribe to our newsletter for updates on research and events
+                                </label>
+                            </div>
+
+                            <div class="form-group full-width">
+                                <button type="submit" class="button button-primary">
+                                    Send Message
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq">
+            <div class="container">
+                <h2>Common Questions</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3>How can I collaborate on research?</h3>
+                        <p>Contact our research team through research@mycobridge.org or use the form above to discuss potential collaboration opportunities.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>Where are you located?</h3>
+                        <p>Our main research facility is located in North Carolina. We also collaborate with partners worldwide.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>How can I support your work?</h3>
+                        <p>Visit our <a href="/donate.html">Support Us</a> page to learn about various ways to contribute to our mission.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid grid grid-3">
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p>Email: info@mycobridge.org</p>
+                    <p>Phone: (555) 123-4567</p>
+                    <p>Address: Research Drive<br>Innovation Center<br>NC 27401</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/about.html">About</a></li>
+                        <li><a href="/team.html">Our Team</a></li>
+                        <li><a href="/research.html">Research</a></li>
+                        <li><a href="/donate.html">Support Us</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://twitter.com/mycobridge" 
+                           target="_blank" 
+                           rel="noopener" 
+                           aria-label="Follow us on Twitter">
+                            <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+                            </svg>
+                        </a>
+                        <a href="https://linkedin.com/company/mycobridge" 
+                           target="_blank" 
+                           rel="noopener" 
+                           aria-label="Connect with us on LinkedIn">
+                            <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                <rect x="2" y="9" width="4" height="12"/>
+                                <circle cx="4" cy="4" r="2"/>
+                            </svg>
+                        </a>
+                        <a href="https://instagram.com/mycobridge" 
+                           target="_blank" 
+                           rel="noopener" 
+                           aria-label="Follow us on Instagram">
+                            <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <!-- Updated Instagram icon with better visibility -->
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                <circle cx="12" cy="12" r="3"/>
+                                <circle cx="17" cy="7" r="1.5"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 MycoBridge Network. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+    // Update copyright year automatically
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+
+    <script src="assets/js/main.js" defer></script>
+</body>
+</html>
