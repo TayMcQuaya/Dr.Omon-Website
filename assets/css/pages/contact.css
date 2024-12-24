@@ -65,8 +65,8 @@
     margin-bottom: var(--spacing-xs);
 }
 
+/* Base styles for contact card links */
 .contact-card a {
-    color: var(--color-primary);
     text-decoration: none;
     font-weight: 600;
     display: block;
@@ -74,9 +74,25 @@
     transition: color var(--transition-fast);
 }
 
-.contact-card a:hover {
+/* Email and Phone links */
+.contact-card a:not(.button) {
+    color: var(--color-primary);
+}
+
+.contact-card a:not(.button):hover {
     color: var(--color-primary-dark);
     text-decoration: underline;
+}
+
+/* Button specific styles */
+.contact-card .button.button-secondary {
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+.contact-card .button.button-secondary:hover {
+    color: var(--color-white);
+    text-decoration: none;
 }
 
 /* Contact Form */

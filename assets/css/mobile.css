@@ -22,30 +22,60 @@
     .header-wrapper {
         flex-direction: column;
         gap: 1rem;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        text-align: center;
     }
 
+    /* Navigation adjustments */
     .nav-menu {
         flex-wrap: wrap;
         justify-content: center;
         gap: 0.5rem;
         padding: 0;
+        width: 100%;
     }
 
     .nav-link {
         font-size: 1rem;
         padding: 0.5rem 0.75rem;
+        color: var(--color-white);
+        transition: all var(--transition-fast);
+    }
+
+    .nav-link:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+        color: var(--color-primary-dark);
+    }
+
+    /* Home page specific nav */
+    .home-page .nav-link {
+        font-size: 1rem;
+        padding: 0.5rem 0.75rem;
+    }
+
+    .home-page .nav-link:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+        color: var(--color-primary-dark);
     }
 
     /* Logo sizing */
     .logo img {
         transform: scale(1.5);
-        margin: 0.5rem 0;
+        margin: 0.5rem auto;
+        display: block;
     }
 
     /* Hero section */
     .hero {
         min-height: auto;
         padding: 2rem 0;
+        margin-top: 2rem;
+    }
+
+    .hero-content {
+        padding: 0 1rem;
     }
 
     .hero-logo img {
@@ -55,10 +85,40 @@
 
     .hero-title {
         font-size: 1.75rem;
+        padding: 0 1rem;
     }
 
     .hero-subtitle {
         font-size: 1.1rem;
+        padding: 0 1rem;
+    }
+
+    /* Publications section */
+    .publications-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+
+    .publications-grid + .text-center {
+        margin-top: var(--spacing-xl);
+    }
+
+    /* Newsletter form */
+    .newsletter-form {
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .newsletter-form .form-group {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .newsletter-form input[type="email"],
+    .newsletter-form button {
+        width: 100%;
+        margin: 0.5rem 0;
     }
 
     /* Grid adjustments */
@@ -68,6 +128,7 @@
 
     .grid-2,
     .grid-3,
+    .grid-4,
     .footer-grid {
         grid-template-columns: 1fr;
     }
@@ -75,6 +136,8 @@
     /* Card adjustments */
     .card {
         padding: 1rem;
+        margin: 0.5rem 0;
+        width: 100%;
     }
 
     .impact-card,
@@ -82,19 +145,62 @@
     .donation-tier,
     .values-card {
         margin: 0.5rem 0;
+        padding: var(--spacing-md);
     }
 
-    /* Team page specific */
-    .team-member-image {
-        width: 150px;
-        height: 150px;
+    /* Contact section */
+    .contact-info {
+        top: 0;
+        margin-bottom: var(--spacing-xl);
+        position: relative;
     }
 
-    .advisor-content {
-        padding: 1rem;
+    .contact-grid {
+        gap: var(--spacing-md);
     }
 
-    /* Research page specific */
+    .contact-card {
+        margin: var(--spacing-xs) 0;
+        width: 100%;
+    }
+
+    /* Form adjustments */
+    .form-wrapper {
+        padding: var(--spacing-md);
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="number"],
+    select,
+    textarea {
+        width: 100%;
+        padding: 0.75rem;
+    }
+
+    /* Button adjustments */
+    .button,
+    .cta-group .button {
+        width: 100%;
+        text-align: center;
+        margin: 0.5rem 0;
+        font-size: 1rem;
+    }
+
+    .cta-group {
+        flex-direction: column;
+        gap: var(--spacing-md);
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    /* Research specific */
     .research-card {
         margin: 0.5rem 0;
     }
@@ -107,44 +213,45 @@
         font-size: 1rem;
     }
 
-    /* Donation page specific */
-    .donation-tier.featured {
-        transform: none;
-    }
-
-    .custom-donation-form {
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    .input-group {
+    .timeline-content {
         width: 100%;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
     }
 
-    #custom-amount {
-        width: 100%;
+    /* Team page specific */
+    .team-member-image {
+        width: 150px;
+        height: 150px;
     }
 
-    /* Contact page specific */
-    .form-grid {
-        grid-template-columns: 1fr;
+    .advisor-content {
+        padding: 1rem;
+        text-align: center;
     }
 
-    .contact-info {
-        top: 0;
+    .advisor-profile {
+        padding: var(--spacing-md);
     }
 
     /* Footer adjustments */
-    .site-footer {
-        text-align: center;
+    .footer-grid {
+        gap: var(--spacing-lg);
     }
 
     .footer-section {
         margin: 1rem 0;
+        text-align: center;
     }
 
     .footer-links {
         justify-content: center;
+        padding: 0;
+    }
+
+    .footer-links a {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
     }
 
     .social-links {
@@ -156,44 +263,6 @@
         width: 36px;
         height: 36px;
         padding: 6px;
-    }
-
-    /* Button adjustments */
-    .button {
-        width: 100%;
-        text-align: center;
-        margin: 0.5rem 0;
-    }
-
-    .cta-group {
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    /* Form adjustments */
-    input[type="text"],
-    input[type="email"],
-    input[type="tel"],
-    select,
-    textarea {
-        width: 100%;
-        padding: 0.75rem;
-    }
-
-    /* Timeline adjustments */
-    .timeline-content {
-        width: 100%;
-        margin-left: 0;
-    }
-
-    .timeline-marker {
-        display: none;
-    }
-
-    /* Image responsiveness */
-    img {
-        max-width: 100%;
-        height: auto;
     }
 }
 
@@ -211,15 +280,29 @@
         gap: 0.25rem;
     }
 
-    .nav-link {
+    .nav-link,
+    .home-page .nav-link {
         font-size: 0.9rem;
         padding: 0.4rem 0.6rem;
+    }
+
+    .hero-title {
+        font-size: 1.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
     }
 
     .social-icon {
         width: 32px;
         height: 32px;
         padding: 5px;
+    }
+
+    .button {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
     }
 }
 
@@ -239,6 +322,7 @@
 @media screen and (max-width: 768px) and (orientation: landscape) {
     .hero {
         min-height: auto;
+        padding: 1rem 0;
     }
 
     .hero-logo img {
@@ -247,5 +331,12 @@
 
     .grid {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .nav-menu {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        justify-content: flex-start;
+        padding-bottom: 0.5rem;
     }
 }
