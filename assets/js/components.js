@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', async function() {
             <div class="container">
                 <div class="header-wrapper">
                     ${!isHomePage ? `
-                        <a href="/" class="logo">
+                        <a href="index.html" class="logo">
                             <img src="assets/images/logo.png" 
                                  alt="MycoBridge Network Logo" 
                                  height="45" 
