@@ -10,15 +10,33 @@
     text-align: center;
     padding: 0;
     margin: 0;
-    gap: var(--spacing-lg);
 }
 
-.hero-content {
-    max-width: var(--container-max-width);
+/* Homepage specific header */
+.home-page .site-header {
+    background: transparent;
+    position: absolute;
     width: 100%;
-    padding: 0 var(--container-padding);
+    top: 0;
 }
 
+.home-page .nav-menu {
+    justify-content: center;
+    gap: var(--spacing-xl);
+}
+
+.home-page .nav-link {
+    color: var(--color-text);
+    font-size: 1.4rem;
+    padding: 0.75rem 1.5rem;
+    transition: background-color var(--transition-fast);
+}
+
+.home-page .nav-link:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Hero Content */
 .hero-logo {
     margin: 0;
     padding: 0;
@@ -32,15 +50,16 @@
 }
 
 .hero-title {
+    font-size: 3rem;
     margin-bottom: var(--spacing-md);
     color: var(--color-text);
 }
 
 .hero-subtitle {
     font-size: var(--font-size-xl);
-    margin-top: 0;
-    margin-bottom: var(--spacing-lg);
     color: var(--color-text-light);
+    margin: 0 auto var(--spacing-lg);
+    max-width: 800px;
 }
 
 /* Research Highlights */
@@ -58,13 +77,28 @@
 .research-icon {
     width: 64px;
     height: 64px;
-    margin-bottom: var(--spacing-md);
+    margin: 0 auto var(--spacing-md);
+}
+
+.research-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.research-content {
+    text-align: center;
+}
+
+.research-content h3 {
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-sm);
 }
 
 /* Impact Metrics */
 .impact-metrics {
-    background: linear-gradient(135deg, var(--color-primary-100) 0%, var(--color-primary-200) 100%);
     padding: var(--spacing-xl) 0;
+    background: var(--color-background);
 }
 
 .metrics-grid {
@@ -73,27 +107,17 @@
     gap: var(--spacing-lg);
 }
 
-.metric-card {
-    text-align: center;
-    padding: var(--spacing-lg);
-}
-
 .metric-number {
     font-size: 3rem;
     font-weight: 700;
-    color: var(--color-primary-600);
-    margin-bottom: var(--spacing-xs);
+    color: var(--color-primary);
 }
 
 .metric-label {
     font-size: var(--font-size-lg);
     font-weight: 600;
-    color: var(--color-primary-700);
-    margin-bottom: var(--spacing-xs);
-}
-
-.metric-description {
     color: var(--color-text);
+    margin-bottom: var(--spacing-xs);
 }
 
 /* Latest Publications */
@@ -112,7 +136,8 @@
     padding: var(--spacing-lg);
     border: 1px solid var(--color-border);
     border-radius: var(--border-radius);
-    transition: all var(--transition-fast);
+    transition: transform var(--transition-fast);
+    background: var(--color-surface);
 }
 
 .publication-card:hover {
@@ -120,33 +145,17 @@
     box-shadow: var(--shadow);
 }
 
-.publication-date {
-    color: var(--color-text-light);
-    font-size: var(--font-size-sm);
-}
-
-.publication-title {
-    margin: var(--spacing-xs) 0;
-    color: var(--color-primary-600);
-}
-
-.publication-authors {
-    font-style: italic;
-    color: var(--color-text-light);
-    margin-bottom: var(--spacing-xs);
-}
-
-.publication-journal {
-    font-weight: 500;
-    color: var(--color-text);
-}
-
 /* Join Research Section */
 .join-research {
-    background: linear-gradient(135deg, var(--color-primary-600) 0%, var(--color-primary-700) 100%);
+    background: var(--color-primary);
     padding: var(--spacing-xl) 0;
     color: var(--color-white);
     text-align: center;
+}
+
+.join-research h2,
+.join-research p {
+    color: var(--color-white);
 }
 
 .newsletter-form {
@@ -164,14 +173,36 @@
     font-size: var(--font-size-base);
 }
 
-/* Animation classes */
-.fade-in-up {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity var(--transition-normal), transform var(--transition-normal);
+/* Button Group */
+.hero .cta-group {
+    margin-top: var(--spacing-lg);
 }
 
-.fade-in-up.visible {
-    opacity: 1;
-    transform: translateY(0);
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-logo img {
+        height: 200px;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: var(--font-size-lg);
+    }
+
+    .home-page .nav-menu {
+        gap: var(--spacing-md);
+    }
+
+    .home-page .nav-link {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+        padding: 0 var(--spacing-md);
+    }
 }

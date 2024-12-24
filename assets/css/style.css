@@ -25,9 +25,5 @@
 @import 'pages/donate.css';
 @import 'pages/contact.css';
 
-/* Themes */
-@import 'themes/light.css';
-@import 'themes/dark.css';
-
 /* Mobile styles */
 @import 'mobile.css';

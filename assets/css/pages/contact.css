@@ -4,12 +4,12 @@
 .contact-page .page-hero {
     padding: var(--spacing-xl) 0;
     text-align: center;
-    background: linear-gradient(135deg, var(--color-primary-100) 0%, var(--color-primary-200) 100%);
+    background: var(--color-background);
 }
 
 .contact-page .lead {
     font-size: var(--font-size-xl);
-    color: var(--color-primary-700);
+    color: var(--color-primary);
     max-width: 800px;
     margin: 0 auto;
 }
@@ -49,8 +49,14 @@
     margin: 0 auto var(--spacing-lg);
 }
 
+.contact-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
 .contact-card h3 {
-    color: var(--color-primary-600);
+    color: var(--color-primary);
     margin-bottom: var(--spacing-md);
 }
 
@@ -60,7 +66,7 @@
 }
 
 .contact-card a {
-    color: var(--color-primary-600);
+    color: var(--color-primary);
     text-decoration: none;
     font-weight: 600;
     display: block;
@@ -69,13 +75,14 @@
 }
 
 .contact-card a:hover {
-    color: var(--color-primary-700);
+    color: var(--color-primary-dark);
     text-decoration: underline;
 }
 
 /* Contact Form */
 .contact-form {
     padding: var(--spacing-xl) 0;
+    background: var(--color-white);
 }
 
 .form-wrapper {
@@ -89,7 +96,7 @@
 
 .form-wrapper h2 {
     text-align: center;
-    color: var(--color-primary-600);
+    color: var(--color-primary);
     margin-bottom: var(--spacing-xl);
 }
 
@@ -119,16 +126,28 @@
     margin-left: var(--spacing-xs);
 }
 
+/* Checkbox Styling */
+.checkbox-label {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-xs);
+    font-weight: normal;
+}
+
+input[type="checkbox"] {
+    margin-top: 0.25rem;
+}
+
 /* FAQ Section */
 .faq {
     padding: var(--spacing-xl) 0;
-    background: linear-gradient(135deg, var(--color-primary-100) 0%, var(--color-primary-200) 100%);
+    background: var(--color-background);
 }
 
 .faq h2 {
     text-align: center;
     margin-bottom: var(--spacing-xl);
-    color: var(--color-primary-700);
+    color: var(--color-primary);
 }
 
 .faq-grid {
@@ -145,7 +164,7 @@
 }
 
 .faq-item h3 {
-    color: var(--color-primary-600);
+    color: var(--color-primary);
     margin-bottom: var(--spacing-md);
 }
 
@@ -154,7 +173,7 @@
 }
 
 .faq-item a {
-    color: var(--color-primary-600);
+    color: var(--color-primary);
     text-decoration: none;
     font-weight: 600;
 }
@@ -163,7 +182,7 @@
     text-decoration: underline;
 }
 
-/* Success Message */
+/* Form Messages */
 .success-message {
     background-color: #d4edda;
     color: #155724;
@@ -173,7 +192,6 @@
     margin: var(--spacing-md) 0;
 }
 
-/* Error Message */
 .error-message {
     background-color: #f8d7da;
     color: #721c24;
@@ -183,21 +201,22 @@
     margin: var(--spacing-md) 0;
 }
 
-/* Dark Mode Adjustments */
-[data-theme="dark"] {
-    .contact-card,
-    .form-wrapper,
-    .faq-item {
-        background: var(--color-surface);
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-info {
+        top: 0;
+        margin-bottom: var(--spacing-xl);
     }
 
-    .success-message {
-        background-color: rgba(212, 237, 218, 0.1);
-        color: #d4edda;
+    .form-grid {
+        grid-template-columns: 1fr;
     }
 
-    .error-message {
-        background-color: rgba(248, 215, 218, 0.1);
-        color: #f8d7da;
+    .contact-grid {
+        gap: var(--spacing-md);
+    }
+
+    .contact-card {
+        margin: var(--spacing-xs) 0;
     }
 }

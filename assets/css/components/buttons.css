@@ -17,13 +17,15 @@
 
 /* Primary Button */
 .button-primary {
-    background-color: var(--color-primary-600);
+    background-color: var(--color-primary);
     color: var(--color-white);
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--border-radius);
     box-shadow: var(--shadow);
 }
 
 .button-primary:hover {
-    background-color: var(--color-primary-700);
+    background-color: var(--color-primary-light);
     transform: translateY(-2px);
     box-shadow: var(--shadow-lg);
 }
@@ -34,13 +36,13 @@
 
 /* Secondary Button */
 .button-secondary {
-    background-color: var(--color-primary-500);
+    background-color: var(--color-primary);
     color: var(--color-white);
     box-shadow: var(--shadow);
 }
 
 .button-secondary:hover {
-    background-color: var(--color-primary-600);
+    background-color: var(--color-primary-light);
     transform: translateY(-2px);
     box-shadow: var(--shadow-lg);
 }
@@ -48,12 +50,12 @@
 /* Text Button */
 .button-text {
     background: none;
-    color: var(--color-primary-600);
+    color: var(--color-primary);
     padding: var(--spacing-xs) var(--spacing-sm);
 }
 
 .button-text:hover {
-    color: var(--color-primary-800);
+    color: var(--color-primary-dark);
     transform: translateX(4px);
 }
 
@@ -74,6 +76,11 @@
     gap: var(--spacing-md);
     justify-content: center;
     margin-top: var(--spacing-lg);
+}
+
+/* Full Width Button */
+.button-full {
+    width: 100%;
 }
 
 /* Loading State */
@@ -111,11 +118,6 @@
     pointer-events: none;
 }
 
-/* Full Width Button */
-.button-full {
-    width: 100%;
-}
-
 /* Icon Button */
 .button-icon {
     display: inline-flex;
@@ -127,4 +129,17 @@
 .button-icon svg {
     width: 1.2em;
     height: 1.2em;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .cta-group {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .button {
+        width: 100%;
+        justify-content: center;
+    }
 }

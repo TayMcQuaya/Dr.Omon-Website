@@ -1,7 +1,7 @@
 /* footer.css */
 
 .site-footer {
-    background-color: var(--color-primary-500);
+    background-color: var(--color-primary);
     color: var(--color-white);
     padding: var(--spacing-sm) 0;
     margin-top: var(--spacing-md);
@@ -57,7 +57,6 @@
 
 .footer-links a:hover {
     background-color: rgba(255, 255, 255, 0.2);
-    transform: none;
 }
 
 /* Social Links */
@@ -81,14 +80,14 @@
 .social-icon rect,
 .social-icon line,
 .social-icon circle {
-    stroke: var(--color-primary-500);
+    stroke: var(--color-primary);
     stroke-width: 2;
     fill: none;
 }
 
 .social-icon:hover {
     transform: translateY(-2px);
-    background-color: var(--color-primary-100);
+    background-color: var(--color-background);
 }
 
 /* Footer Bottom */
@@ -102,4 +101,35 @@
 .footer-bottom p {
     color: var(--color-white);
     margin-bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+
+    .footer-section {
+        margin: 1rem 0;
+    }
+
+    .social-links {
+        gap: var(--spacing-md);
+    }
+
+    .social-icon {
+        width: 48px;
+        height: 48px;
+        padding: 10px;
+    }
+
+    .footer-links {
+        justify-content: center;
+    }
+
+    .footer-links a {
+        font-size: 1rem;
+        padding: 0.4rem 0.8rem;
+    }
 }

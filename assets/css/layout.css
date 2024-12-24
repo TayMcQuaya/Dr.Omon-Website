@@ -121,7 +121,7 @@ main {
 .z-40 { z-index: var(--z-modal); }
 .z-50 { z-index: var(--z-popover); }
 
-/* Animations */
+/* Basic animations */
 .fade-in {
     animation: fadeIn var(--transition-normal);
 }
